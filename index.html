@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL ESTEEM CENTER</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {line-height: 1.6; color: #333; background: #fafafa;}
+
+    /* Header */
+    header {background: #8b2c00; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;}
+    header .logo {display: flex; align-items: center;}
+    header .logo img {height: 50px; margin-right: 10px;}
+    header h1 {font-size: 1.5rem;}
+    nav a {color: white; margin-left: 1rem; text-decoration: none; font-weight: 600;}
+    nav a:hover {text-decoration: underline;}
+
+    /* Hero */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1588776814546-58c95c6fa63f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') center/cover no-repeat; 
+      color: white; text-align: center; padding: 6rem 2rem;
+    }
+    .hero h2 {font-size: 2.5rem; margin-bottom: 1rem;}
+    .hero p {font-size: 1.2rem; max-width: 700px; margin: auto; background: rgba(0,0,0,0.6); padding: 0.8rem; border-radius: 8px;}
+
+    /* Sections */
+    section {padding: 4rem 2rem; max-width: 1100px; margin: auto;}
+    h2 {text-align: center; margin-bottom: 2rem; color: #8b2c00;}
+
+    .about, .elementary, .services {display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));}
+    .card {background: white; padding: 2rem; border-radius: 10px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
+    .card i {font-size: 2rem; color: #8b2c00; margin-bottom: 1rem;}
+
+    /* Contact */
+    .contact p {font-size: 1.1rem; margin: 0.5rem 0;}
+    .contact i {margin-right: 0.5rem; color: #8b2c00;}
+
+    /* Footer */
+    footer {background: #333; color: white; text-align: center; padding: 1.5rem;}
+    footer a {color: #8b2c00; margin: 0 0.5rem; text-decoration: none;}
+    footer a:hover {text-decoration: underline;}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <!-- Logo placeholder (replace logo.png with your actual logo file) -->
+      <img src="logo.png" alt="EL ESTEEM Logo">
+      <h1>EL ESTEEM</h1>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#elementary">Overview</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h2>Care. Support. Hope.</h2>
+    <p>EL ESTEEM CENTER is dedicated to providing compassionate support and services that uplift individuals, families, and communities in Sapele, Delta State, Nigeria.</p>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <div class="card">
+      <i class="fas fa-hand-holding-heart"></i>
+      <h3>Our Mission</h3>
+      <p>To deliver compassionate care and support that transforms lives, builds resilience, and strengthens communities.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-users"></i>
+      <h3>Our Team</h3>
+      <p>A dedicated group of professionals and volunteers, led by CEO Ruth Oyibo, committed to serving with love and excellence.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-globe-africa"></i>
+      <h3>Our Impact</h3>
+      <p>We have touched the lives of individuals and families in Sapele and beyond, providing guidance, hope, and meaningful support.</p>
+    </div>
+  </section>
+
+  <!-- Overview / Elementary Section -->
+  <section class="elementary" id="elementary">
+    <h2>Overview</h2>
+    <div class="card">
+      <i class="fas fa-seedling"></i>
+      <h3>Who We Are</h3>
+      <p>A safe and welcoming center offering care, support, and guidance to individuals in need.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-hands-helping"></i>
+      <h3>What We Do</h3>
+      <p>We deliver essential care services, emotional support, and empowerment programs that promote healthier communities.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-lightbulb"></i>
+      <h3>Why Choose Us</h3>
+      <p>We treat every individual with dignity, compassion, and respect, ensuring they feel valued and supported.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="card">
+      <i class="fas fa-hospital-user"></i>
+      <h3>Support & Care</h3>
+      <p>Personalized support designed to meet the emotional, physical, and social needs of individuals and families.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-heartbeat"></i>
+      <h3>Health Awareness</h3>
+      <p>Guidance on basic health practices, counseling, and referrals to specialized services when needed.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-school"></i>
+      <h3>Community Programs</h3>
+      <p>Educational initiatives, social engagement, and empowerment opportunities that benefit the wider community.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><i class="fas fa-map-marker-alt"></i> El Esteem Center, 25 Okpe Road, Sapele, Delta State, Nigeria</p>
+    <p><i class="fas fa-phone"></i> +234 805 379 1961</p>
+    <p><i class="fas fa-envelope"></i> support@esteeemconnect2001.name.ng</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 EL ESTEEM CENTER. All Rights Reserved.</p>
+    <p>
+      <a href="#home">Home</a> | 
+      <a href="#about">About</a> | 
+      <a href="#services">Services</a> | 
+      <a href="#contact">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
